@@ -1,0 +1,16 @@
+filename = 'curious_armor_stands-1.20-5.1.0.jar'
+name = 'Curious Armor Stands'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '7c69c82603c4797616fc7f4aed07062dd0afe203'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5403962
+project-id = 398784

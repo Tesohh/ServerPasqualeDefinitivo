@@ -18,7 +18,9 @@
 !/mods/systeams*
 !/mods/ExtendedCrafting*
 
-/mods/.index
+!/mods
+/mods/*
+!/mods/.index
 /mods/.connector
 /mods/memoryleakfix*
 
