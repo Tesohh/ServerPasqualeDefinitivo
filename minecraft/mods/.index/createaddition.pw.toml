@@ -1,16 +1,16 @@
-filename = 'emi_loot-0.7.5+1.20.1+fix1+forge.jar'
-name = 'EMI Loot'
+filename = 'createaddition-1.20.1-1.3.1.jar'
+name = 'Create Crafts & Additions'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '4ffcd5c3626eeb95a0be8c65cda1e51328aad6bf'
+hash = '0c408317b7c3bc3c7f7d5f6dbbb3ee106fa5f4fc'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6157014
-project-id = 681783
+file-id = 6306951
+project-id = 439890
