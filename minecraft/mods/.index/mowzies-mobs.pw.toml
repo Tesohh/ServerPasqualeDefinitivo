@@ -1,0 +1,16 @@
+filename = 'mowziesmobs-1.7.1.jar'
+name = "Mowzie's Mobs"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'd8a0d78de3d0792ac64a767c42ba16c43f8e0234'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6224182
+project-id = 250498

@@ -71,6 +71,7 @@ config/embeddium-fingerprint.json
 config/oculus.properties
 config/xaerominimap.txt
 config/xaeroworldmap.txt
+/config/xaerominimap_entities.json
 
 #Hide code-generated files
 kubejs/client_scripts/Dev_Capes.js

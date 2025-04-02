@@ -1,0 +1,16 @@
+filename = 'nether_remastered-2.4-forge-1.20.1.jar'
+name = 'Nether Remastered'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'be1dc52f50a78972b2ccc3c2fc546ff5835397bf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6179598
+project-id = 872516
