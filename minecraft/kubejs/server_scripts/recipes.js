@@ -10,4 +10,6 @@ ServerEvents.recipes(event => {
 	})
 
 	event.remove({ id: "functionalstorage:ender_drawer" })
+
+	event.shaped("create:transmitter", [" T ", "WWW"], { T: "redstone_torch", W: "createaddition:copper_wire" })
 })

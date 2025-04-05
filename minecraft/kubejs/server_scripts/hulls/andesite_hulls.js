@@ -1,32 +1,5 @@
 // priority: 0
 
-/**
- * 
- * @param {Internal.RecipesEventJS} event 
- * @param {InputItem_} hull 
- * @param {InputItem_} output 
- * @param {(InputItem_)[]} additions
- * @param {Special.RecipeId} recipe_id 
- */
-function hull_crafting(event, hull, output, additions, recipe_id) {
-	event.remove({ id: recipe_id })
-	let row = "ABC"
-	let translation = { A: hull, B: additions[0] || "", C: additions[1] || "" }
-	event.shaped(output, [row, "   ", "   "], translation)
-}
-
-/**
- * 
- * @param {Internal.RecipesEventJS} event 
- * @param {InputItem_} hull 
- * @param {OutputItem_} output 
- * @param {Special.RecipeId} recipe_id 
- */
-function hull_cutting(event, hull, output, recipe_id) {
-	event.remove({ id: recipe_id })
-	event.stonecutting(output, hull)
-}
-
 ServerEvents.recipes(event => {
 	let hull = "kubejs:andesite_machine_hull"
 	hull_cutting(event, hull, "4x create:andesite_funnel", "create:crafting/logistics/andesite_funnel")
@@ -37,6 +10,9 @@ ServerEvents.recipes(event => {
 	hull_cutting(event, hull, "2x create:mechanical_plough", "create:crafting/kinetics/mechanical_plough")
 	hull_cutting(event, hull, "2x create:mechanical_roller", "create:crafting/kinetics/mechanical_roller")
 	hull_cutting(event, hull, "2x create:contraption_controls", "create:crafting/kinetics/contraption_controls")
+
+	hull_crafting(event, hull, "kubejs:copper_machine_hull", ["copper_ingot"], null)
+	hull_crafting(event, hull, "kubejs:logistics_machine_hull", ["iron_ingot"], null)
 
 	hull_crafting(event, hull, "createaddition:rolling_mill", ["create:shaft", "create:shaft"], "createaddition:crafting/rolling_mill")
 	hull_crafting(event, hull, "create_mechanical_extruder:mechanical_extruder", ["piston"], "create_mechanical_extruder:crafting/mechanical_extruder")
@@ -56,6 +32,7 @@ ServerEvents.recipes(event => {
 	hull_crafting(event, hull, "create:windmill_bearing", ["create:shaft", "#minecraft:slabs"], "create:crafting/kinetics/windmill_bearing")
 	hull_crafting(event, hull, "create:mechanical_bearing", ["create:shaft", "create:andesite_casing"], "create:crafting/kinetics/mechanical_bearing")
 	hull_crafting(event, hull, "create:mechanical_piston", ["create:piston_extension_pole", "#minecraft:slabs"], "create:crafting/kinetics/mechanical_piston")
+	hull_crafting(event, hull, "create:redstone_link", ["create:transmitter"], "create:crafting/logistics/redstone_link")
 
 	hull_crafting(event, hull, "waterframes:projector", ["glowstone", "amethyst_shard"], "waterframes:projector")
 	hull_crafting(event, hull, "waterframes:tv", ["glowstone", "tinted_glass"], "waterframes:tv")
