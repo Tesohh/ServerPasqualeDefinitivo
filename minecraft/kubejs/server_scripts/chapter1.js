@@ -20,6 +20,11 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Item.of("create:andesite_alloy").withCount(2), [Item.of("minecraft:andesite"), Item.of("create:zinc_nugget").withCount(4)])
 	// #endregion
 
-	// #region Frame and hulls
+	// #region Mechanisms and hulls
+	let inter = "kubejs:incomplete_basic_mechanism"
+	event.recipes.create.sequenced_assembly([Item.of('kubejs:basic_mechanism')], '#minecraft:slabs', [
+		event.recipes.create.deploying(inter, [inter, 'create:andesite_alloy']),
+		event.recipes.create.deploying(inter, [inter, Item.of('kubejs:engineers_hammer')]).keepHeldItem(),
+	]).transitionalItem(inter).loops(1)
 	// #endregion
 })

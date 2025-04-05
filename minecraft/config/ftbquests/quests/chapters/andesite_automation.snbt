@@ -1,0 +1,183 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "andesite_automation"
+	group: "35CC5E02A31A690D"
+	icon: "create:andesite_alloy"
+	id: "3F3E712A5CC85041"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Cobblestone generators are a very iconic minecraft “contraption”, but create takes it to a whole new level."
+				""
+				"You are gonna need a LOT of cobblestone as many processing chains begin with cobblestone."
+				""
+				"For now, make a single cobblestone generator with a &dMechanical Extruder&r."
+				""
+				"&dMechanical Extruders&r take rotational power and must be adjacent to a water and lava source, and give out cobblestone."
+			]
+			icon: "minecraft:cobblestone"
+			id: "4BBFE29AAFDB24DE"
+			size: 2.0d
+			tasks: [
+				{
+					id: "05C8A399AA44BD90"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "1CAF4008A3EC3F8D"
+					item: "create_mechanical_extruder:mechanical_extruder"
+					type: "item"
+				}
+			]
+			title: "Cobblestone Generator"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4BBFE29AAFDB24DE"]
+			icon: "minecraft:gravel"
+			id: "10EA5791EDD4EB06"
+			subtitle: "Process cobblestone through a Mill Stone to get Gravel."
+			tasks: [
+				{
+					id: "384809564D4FD1B9"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "2F4B6042348E9EC8"
+					item: "create:millstone"
+					type: "item"
+				}
+			]
+			title: "Grinding to gravel"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["10EA5791EDD4EB06"]
+			description: [
+				"You can get water in the basin by using a pump above a vanilla infinite source of water."
+				""
+				"Pump gravel slurry into another mixer for the next step."
+				""
+				"Note that you’re gonna need a Smart Pipe to make sure only Gravel Slurry comes out of the pipe, or else you’re gonna pump water into the other basin."
+			]
+			icon: "kubejs:gravel_slurry_bucket"
+			id: "724275DD43D4DCB3"
+			subtitle: "Put water and gravel in a mechanical mixer to get Gravel Slurry"
+			tasks: [
+				{
+					id: "02AF73EDC74E61A3"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "2C0E7D61FE5985E6"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "573DCF981846924A"
+					item: "create:smart_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Making Gravel Slurry"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["724275DD43D4DCB3"]
+			id: "3269704BBCFEA6AB"
+			subtitle: "Mix Gravel Slurry by itself to get Zinc Nuggets and Slurry Waste"
+			tasks: [{
+				id: "32DB7C12CAB4BF10"
+				item: "create:zinc_nugget"
+				type: "item"
+			}]
+			title: "Centrifuging Gravel Slurry"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3269704BBCFEA6AB"]
+			description: [
+				"I swear this is the last basin (for this chapter)."
+				""
+				"If you compact Slurry Waste with a mechanical press over a basin, you will get some random types of stone."
+				""
+				"One of these stones might be andesite. How convenient!"
+				""
+				"Using andesite funnels and drawers, figure out a way to filter out all stones that aren’t andesite and store them for later use."
+			]
+			id: "789765F26A9A6F43"
+			subtitle: "Compact Slurry Waste to get random stones, including andesite"
+			tasks: [
+				{
+					id: "70F896D408314604"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					id: "6B9D43BA02A28D41"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+				{
+					id: "3C7E7FDE1B9865AA"
+					item: "minecraft:granite"
+					type: "item"
+				}
+				{
+					id: "6D9646E215E2200E"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+			]
+			title: "Random Stone"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["789765F26A9A6F43"]
+			description: [
+				"Great, you now have Andesite and Zinc nuggets automated."
+				""
+				"You can now use the recipe you learned before (Mixing 1 andesite and 4 zinc nuggets to get 2 andesite alloys) to make &dautomated Andesite Alloy!&r"
+			]
+			id: "1A0A2FE1EBD5BB5C"
+			rewards: [
+				{
+					id: "1313993F7A604E55"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					auto: "invisible"
+					icon: "create:andesite_alloy"
+					id: "278262610F5DC688"
+					ignore_reward_blocking: true
+					stage: "andesite_age"
+					team_reward: true
+					title: "Andesite Age"
+					type: "gamestage"
+				}
+			]
+			size: 2.0d
+			subtitle: "Mix Zinc Nuggets and Andesite to make Andesite Alloy"
+			tasks: [{
+				id: "4FB03B61A0C8BC41"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 6.214285714285715d
+			y: -2.4642857142857153d
+		}
+	]
+	title: "Andesite Automation"
+}

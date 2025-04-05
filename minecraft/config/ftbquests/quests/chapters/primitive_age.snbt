@@ -1,0 +1,514 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "primitive_age"
+	group: "35CC5E02A31A690D"
+	icon: {
+		Count: 1
+		id: "minecraft:iron_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "3815C2FDBBCC99B9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Play minecraft as you normally would up to &lIron&r or &lDiamond&r gear."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4482B0E51B7E7784"
+			rewards: [{
+				count: 2
+				id: "2A9B5B62E2437A21"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 3.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "085A31DE5805A53A"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "01393742603C7C6E"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3CB355C44D9838A7"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "26AAA69D89ABC265"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "733DEDBF12F35904"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Getting Started"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4482B0E51B7E7784"]
+			description: [
+				"Find and kill a Ferrous Wroughtnought to get the Hammer of a Thousand Metals. "
+				""
+				"&o&dThe objective is simple, but the fight is quite hard so team up if you can.&r&r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "24F9404B955CECD8"
+			rewards: [{
+				id: "6FE74BAD8A77070B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				id: "4ADE3FFFC007A5EE"
+				title: "Ferrous Wroughtnaut"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Golem++"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["24F9404B955CECD8"]
+			id: "345AE496B6E05A92"
+			rewards: [{
+				id: "3E2F609926B15C51"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "562CAAE62635C111"
+				item: "mowziesmobs:wrought_axe"
+				type: "item"
+			}]
+			title: "Resarch: Axe of a Thousand Metals"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["345AE496B6E05A92"]
+			icon: "kubejs:engineers_hammer"
+			id: "54BBE27360B8DC18"
+			rewards: [{
+				id: "737A08D4604FBE0C"
+				item: "kubejs:engineers_hammer"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "6B39FBC7884F2F1C"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			title: "Engineer's Hammer"
+			x: -2.4732142857142847d
+			y: 4.559523809523803d
+		}
+		{
+			dependencies: ["4482B0E51B7E7784"]
+			description: [
+				"This modpack changes most Create recipes, as well as some other mods’, to use different tiers of &5Machine Hulls&r. "
+				"At the start, the recipe for Andesite Machine Hulls is very &cinconvenient&r, but it will get better as you unlock &5new machines&r and start automating them. "
+				""
+				"Have 1 free machine hull for your efforts!"
+			]
+			icon: "kubejs:andesite_machine_hull"
+			id: "4C77DB0975E6874D"
+			rewards: [{
+				id: "76F6C339268D4F75"
+				item: "kubejs:andesite_machine_hull"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2970D5E4FFDA33CF"
+				title: "Thinking with Hulls"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C77DB0975E6874D"]
+			description: [
+				"Andesite alloy is crucial to all your Create needs."
+				""
+				"You can make andesite alloy with your puny hands on a crafting table, with 1 andesite block and 4 zinc nuggets."
+			]
+			id: "6173D2A6735B17E5"
+			rewards: [{
+				id: "75F0341C2E4CC5D2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "05FEABA16B8CFECF"
+				item: { Count: 16, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6173D2A6735B17E5"]
+			description: [
+				"This is all fine and dandy, but this recipe will be expensive and annoying in the long run. "
+				""
+				"You can use a Create Mechanical Mixer to double your andesite alloy output."
+			]
+			icon: "create:andesite_alloy"
+			id: "2EF64AB7191C240A"
+			rewards: [{
+				id: "6CAE9E5840C77D10"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				id: "620D2363690EDBDE"
+				title: "Checkmark"
+				type: "checkmark"
+			}]
+			title: "Making more andesite"
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Craft two water wheels, some cogs, shafts and large cogs."
+				""
+				"Place the water wheels, and if they’re touching flowing water, they should turn."
+				"Great, you are now making &5SU (stress units)&r! If you have made &6engineer’s goggles&r, you should see that you now have a Stress Capacity of &5512 SU&r. This means, that all machines attached to the system may use a &5maximum&r of 512 SU. "
+				""
+				"SU “Consumption” is proportional to &9RPM&r and machine type."
+				"&9RPM&r (Revolutions Per Minute) is the speed at which shafts turn in your system"
+			]
+			icon: "create:stressometer"
+			id: "114EC975BE80144E"
+			rewards: [{
+				id: "429B71005106B003"
+				item: "create:stressometer"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "0CFB592564B59B26"
+					item: { Count: 2, id: "create:water_wheel" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "57AF2672481DC5F0"
+					item: { Count: 4, id: "create:cogwheel" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "41557E7C63ED26AA"
+					item: { Count: 4, id: "create:large_cogwheel" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6B85784E381D2C5F"
+					item: { Count: 16, id: "create:shaft" }
+					type: "item"
+				}
+			]
+			title: "Primer on SU"
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&6Engineer's Goggles&r allow you to see details and statistics about machines when worn."
+				""
+				"It is recommended to craft them as soon as possible as they give lots of useful information."
+			]
+			id: "65BADB55EC84E3A1"
+			optional: true
+			rewards: [{
+				id: "6C826DAE6F1254FD"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				id: "6F0593B6CF194BAA"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"If a Large Cog meshes with a small Cog turn, the small cog will turn at twice the speed of the large cog, and viceversa if a small cog meshes with a large cog."
+				"Mechanical Mixers require a certain &9RPM&r, so make sure to use gear ratios to achieve your desired &9RPM&r."
+			]
+			icon: "create:speedometer"
+			id: "6B2F51BF2C596CC0"
+			rewards: [{
+				id: "776889042E43B387"
+				item: "create:speedometer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0492A2E396BA8B1F"
+				title: "Gear Ratios"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"114EC975BE80144E"
+				"6B2F51BF2C596CC0"
+				"65BADB55EC84E3A1"
+				"2EF64AB7191C240A"
+			]
+			description: [
+				"Craft a Basin and, using the machine hull from before, craft a Mechanical Mixer."
+				""
+				"Using cogs, large cogs and shafts, connect your water wheels to the mechanical mixer."
+				""
+				"Note that the mechanical mixer has an internal small cog, so if powered with a large cog, it will get double &9RPM.&r"
+			]
+			id: "3E57B9FA56ADFD1B"
+			rewards: [{
+				id: "413D26A874E8C25A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2451D0E39AFE4F47"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "3595B1E57BDB2166"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "Your first Create machine"
+			x: -6.5089285714285765d
+			y: 2.5714285714285694d
+		}
+		{
+			dependencies: ["3E57B9FA56ADFD1B"]
+			description: [
+				"Create is a mod focused around automation and has many recipes to make (almost) anything automatable."
+				""
+				"Many recipes are intentionally annoying, difficult or expensive to push you towards automation."
+				""
+				"Your objective for this chapter is to automate the production of Andesite Alloy and consequently Basic Mechanisms."
+				""
+				"Use EMI (the recipe viewer you have on the right of your inventory) and read the Quest Book (Andesite Automation chapter) to figure out the processing chain for making Andesite Alloy."
+			]
+			icon: "create:brass_hand"
+			id: "1AA9E7048F504690"
+			rewards: [{
+				count: 4
+				id: "574393042B09552E"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "061063394F67E0D5"
+				title: "Primer on Automation"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1A0A2FE1EBD5BB5C"
+				"1AA9E7048F504690"
+			]
+			description: ["Achieve Andesite Alloy automation by completing the chapter about it."]
+			id: "44C3A969334FD34F"
+			rewards: [{
+				id: "6075F1085A5AB6EE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "0403FE7552177519"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Automating Andesite Alloy"
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"44C3A969334FD34F"
+				"54BBE27360B8DC18"
+			]
+			description: [
+				"Basic mechanisms can halve your andesite alloy usage for making machine hulls, as well as making some other crafts cheaper, or straight up unlocking some others."
+				""
+				"Note that you’re gonna need the Engineer’s Hammer to make these."
+			]
+			id: "49DC0026C591E98D"
+			rewards: [
+				{
+					count: 16
+					id: "683E8B51EE05DB21"
+					item: "kubejs:basic_mechanism"
+					type: "item"
+				}
+				{
+					id: "0DC13EF491D0B893"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "71C80FD086FE1076"
+				item: "kubejs:basic_mechanism"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["49DC0026C591E98D"]
+			description: [
+				"Finally, use 1 wood plank and 4 basic mechanisms to make an andesite machine hull."
+				""
+				"Congratulations on finishing your first processing chain!"
+			]
+			id: "5E53DCFDD8C4CC19"
+			size: 3.0d
+			tasks: [{
+				id: "3B0EF589F89914A5"
+				item: "kubejs:andesite_machine_hull"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5E53DCFDD8C4CC19"]
+			description: [
+				"You do not need to automate these right now as they aren’t needed in high volume, although you probably will want to automate them later down the line."
+				""
+				"These can be used to make Frogports, Stock Links, Stock Tickers, Packagers, Re-Packagers and Factory Gauges, all very useful blocks for managing complex logistics and building a central storage solution."
+				""
+				"It is HIGHLY recommended to use these blocks and you absolutely should not ignore them."
+			]
+			id: "2425DCF4AC4391AA"
+			rewards: [{
+				id: "60B3DA4EE55580DB"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			size: 1.5d
+			subtitle: "Upgrade your Andesite Machine Hulls with an iron ingot to get Logistics Machine Hulls"
+			tasks: [{
+				id: "66823F87572645BB"
+				item: "kubejs:logistics_machine_hull"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.75d
+		}
+		{
+			dependencies: ["5E53DCFDD8C4CC19"]
+			description: [
+				"You do not need to automate these right now as they aren’t needed in high volume, although you probably will want to automate them later down the line."
+				""
+				"These are used for all sorts of fluid related business, such as Smart Pipes, Steam Engines, Spouts, Hose Pulleys, Item Drains, Portable Fluid Interfaces, Disenchanters and Printers."
+			]
+			id: "459FD519AE814306"
+			rewards: [{
+				id: "70CF38A1AE5B464F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			size: 1.5d
+			subtitle: "Upgrade your Andesite Machine Hulls with a copper ingot to get Copper Machine Hulls."
+			tasks: [{
+				id: "5251C4603AE0C551"
+				item: "kubejs:copper_machine_hull"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.75d
+		}
+	]
+	title: "Primitive Age"
+}
