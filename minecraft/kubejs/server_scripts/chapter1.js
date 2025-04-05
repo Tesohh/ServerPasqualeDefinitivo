@@ -26,5 +26,19 @@ ServerEvents.recipes(event => {
 		event.recipes.create.deploying(inter, [inter, 'create:andesite_alloy']),
 		event.recipes.create.deploying(inter, [inter, Item.of('kubejs:engineers_hammer')]).keepHeldItem(),
 	]).transitionalItem(inter).loops(1)
+
+
+	event.shaped(
+		Item.of("kubejs:andesite_machine_hull"),
+		[
+			' M ',
+			'MPM',
+			' M '
+		],
+		{
+			M: "kubejs:basic_mechanism",
+			P: "#minecraft:planks"
+		}
+	)
 	// #endregion
 })

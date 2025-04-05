@@ -1,0 +1,16 @@
+filename = 'MoreMobGriefingOptions-1.20.1-2.0.4.jar'
+name = 'More MobGriefing Options'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'e2f8a81a7220b226720040d3345e08bedb888c96'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4670103
+project-id = 389013

@@ -15,7 +15,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Play minecraft as you normally would up to &lIron&r or &lDiamond&r gear."]
+			description: [""]
 			icon: {
 				Count: 1
 				id: "minecraft:iron_pickaxe"
@@ -32,6 +32,7 @@
 			}]
 			shape: "diamond"
 			size: 3.0d
+			subtitle: "Play minecraft as you normally would up to &lIron&r or &lDiamond&r gear."
 			tasks: [
 				{
 					consume_items: false
@@ -100,11 +101,7 @@
 		}
 		{
 			dependencies: ["4482B0E51B7E7784"]
-			description: [
-				"Find and kill a Ferrous Wroughtnought to get the Hammer of a Thousand Metals. "
-				""
-				"&o&dThe objective is simple, but the fight is quite hard so team up if you can.&r&r"
-			]
+			description: ["&o&dThe objective is simple, but the fight is quite hard so team up if you can.&r&r"]
 			icon: {
 				Count: 1
 				id: "minecraft:iron_sword"
@@ -118,6 +115,7 @@
 				type: "xp_levels"
 				xp_levels: 5
 			}]
+			subtitle: "Find and kill a Ferrous Wroughtnaut"
 			tasks: [{
 				entity: "mowziesmobs:ferrous_wroughtnaut"
 				id: "4ADE3FFFC007A5EE"
@@ -159,6 +157,7 @@
 				type: "item"
 			}]
 			size: 1.5d
+			subtitle: "The Engineer's Hammer is used to make Basic Mechanisms"
 			tasks: [{
 				consume_items: true
 				count: 3L
@@ -416,6 +415,7 @@
 			dependencies: [
 				"44C3A969334FD34F"
 				"54BBE27360B8DC18"
+				"0D10350559ADA35C"
 			]
 			description: [
 				"Basic mechanisms can halve your andesite alloy usage for making machine hulls, as well as making some other crafts cheaper, or straight up unlocking some others."
@@ -508,6 +508,38 @@
 			}]
 			x: -3.0d
 			y: 12.75d
+		}
+		{
+			description: [
+				"Also, if you want to automate Basic Mechanisms, you of course want to automate wood too."
+				""
+				"You can also grow different types of wood for building purposes!"
+			]
+			id: "0D10350559ADA35C"
+			optional: true
+			subtitle: "Build a wood farm to never worry about felling trees ever again."
+			tasks: [
+				{
+					id: "2A4C0DA8E1AEC6CC"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+				{
+					id: "40C94105AA595084"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "Tree Farm"
+			x: -8.0d
+			y: 7.5d
 		}
 	]
 	title: "Primitive Age"

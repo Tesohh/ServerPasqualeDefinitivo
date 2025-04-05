@@ -319,7 +319,7 @@
 		"Allow Rotating Bundles" = true
 
 	[management.hotbar_changer]
-		"Animation Time" = 7.0
+		"Animation Time" = 2.0
 
 	[management.inventory_sorting]
 		"Enable Player Inventory" = true
