@@ -40,5 +40,13 @@ ServerEvents.recipes(event => {
 			P: "#minecraft:planks"
 		}
 	)
+
+	inter = "framedblocks:framed_hammer"
+	event.recipes.create.sequenced_assembly([Item.of("kubejs:engineers_hammer")], "framedblocks:framed_hammer",
+		[
+			event.recipes.create.deploying(inter, [inter, 'diamond_block']),
+			event.recipes.create.deploying(inter, [inter, Item.of('kubejs:engineers_hammer')]).keepHeldItem()
+		],
+	).transitionalItem(inter).loops(1)
 	// #endregion
 })

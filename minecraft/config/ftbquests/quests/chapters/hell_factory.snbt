@@ -1,0 +1,156 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hell_factory"
+	group: "514AC568FEA877D7"
+	icon: "nether_remastered:seal_of_the_underworld_item"
+	id: "41A09B65D00263C7"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Your objective for this chapter is to venture down the bowels of &chell&r, research &bSoul&r Inscription Technology and setup your own little &bSoul&r Packaging Company."
+				""
+				"The nether has been locked down by the &4UAC&r, your biggest competitor, and is not accepting new guests unless they prove themselves worthy of entering."
+			]
+			icon: "minecraft:book"
+			id: "60AA6BD6CDCE7DDF"
+			rewards: [{
+				id: "5BE51C4D2ACDCFD3"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "53AD66A0D541803A"
+				title: "Introduction"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60AA6BD6CDCE7DDF"]
+			description: [
+				"1. Create Obsidian Infused Bottles with 2x Glass and 1x Crying Obsidian (Crafts x3)"
+				""
+				"2. Hold the Obsidian Infused Bottle in your off-hand and kill any undead mob, doing so will trap the Nether Essence inside the bottle"
+			]
+			id: "70619A21D00D4BC8"
+			rewards: [{
+				id: "17DB610B481BD138"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Trap the essence of undead mobs in bottles"
+			tasks: [{
+				count: 3L
+				id: "339266F0375F1AC6"
+				item: "nether_remastered:bottled_nether_essence"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60AA6BD6CDCE7DDF"]
+			description: [
+				"Obtain all four shard pieces from:"
+				""
+				"- Evokers, "
+				"- Witches, "
+				"- Abandoned Mineshafts"
+				"- Pillager Outposts. "
+				""
+				"(note: you can turn any shard piece into any other orientation in a crafting table)"
+			]
+			id: "56CFB7DACCFE5B90"
+			rewards: [{
+				id: "058F9C58CC58E685"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Find rare medallion shards"
+			tasks: [
+				{
+					id: "4077E6C782E149B7"
+					item: "nether_remastered:seal_piece_1"
+					type: "item"
+				}
+				{
+					id: "562A7350D077FDDD"
+					item: "nether_remastered:seal_piece_2"
+					type: "item"
+				}
+				{
+					id: "4EC6DF8CC1B29837"
+					item: "nether_remastered:seal_piece_3"
+					type: "item"
+				}
+				{
+					id: "0BD24AA1C84FD6DD"
+					item: "nether_remastered:seal_piece_4"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6631493DB48B59C6"
+				"70619A21D00D4BC8"
+				"56CFB7DACCFE5B90"
+			]
+			description: [
+				"Put everything together to get the Seal of the Underworld."
+				""
+				"After consuming it, you can finally enter the Nether!"
+				""
+				"If you're playing multiplayer, remember to duplicate it using gold ingots before consuming it."
+			]
+			id: "02DD8BF6EAA6604D"
+			rewards: [
+				{
+					id: "1EF7E0C551E483A0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 4
+					id: "2819BDB67ADB2A7C"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "13588C7B472432CB"
+				item: "nether_remastered:seal_of_the_underworld_item"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.374999999999993d
+		}
+		{
+			dependencies: ["60AA6BD6CDCE7DDF"]
+			description: ["Make a Nether Crystal by deploying Obsidian thrice on an emerald and then deploying the engineer's hammer on it."]
+			id: "6631493DB48B59C6"
+			rewards: [{
+				id: "46DC5FC866D22FE5"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "129FC996E2AFFD8C"
+				item: "nether_remastered:seal_crystal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+	]
+	title: "Entering the Nether"
+}

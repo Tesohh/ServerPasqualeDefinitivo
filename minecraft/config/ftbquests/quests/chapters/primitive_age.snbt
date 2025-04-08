@@ -110,11 +110,19 @@
 				}
 			}
 			id: "24F9404B955CECD8"
-			rewards: [{
-				id: "6FE74BAD8A77070B"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
+			rewards: [
+				{
+					id: "6FE74BAD8A77070B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 5
+					id: "5D2B729B59D22941"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Find and kill a Ferrous Wroughtnaut"
 			tasks: [{
 				entity: "mowziesmobs:ferrous_wroughtnaut"
@@ -130,11 +138,18 @@
 		{
 			dependencies: ["24F9404B955CECD8"]
 			id: "345AE496B6E05A92"
-			rewards: [{
-				id: "3E2F609926B15C51"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
+			rewards: [
+				{
+					id: "3E2F609926B15C51"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "410F27ABC9BFBCAA"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
+			]
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
@@ -201,9 +216,9 @@
 			]
 			id: "6173D2A6735B17E5"
 			rewards: [{
-				id: "75F0341C2E4CC5D2"
-				type: "xp_levels"
-				xp_levels: 1
+				id: "6FD59F6B344C08D4"
+				item: "createdeco:gold_coin"
+				type: "item"
 			}]
 			tasks: [{
 				consume_items: false
@@ -224,11 +239,6 @@
 			]
 			icon: "create:andesite_alloy"
 			id: "2EF64AB7191C240A"
-			rewards: [{
-				id: "6CAE9E5840C77D10"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
 			tasks: [{
 				id: "620D2363690EDBDE"
 				title: "Checkmark"
@@ -342,9 +352,9 @@
 			]
 			id: "3E57B9FA56ADFD1B"
 			rewards: [{
-				id: "413D26A874E8C25A"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "548D9BFFFDFEDFEE"
+				item: "createdeco:gold_coin"
+				type: "item"
 			}]
 			size: 1.5d
 			tasks: [
@@ -398,9 +408,9 @@
 			description: ["Achieve Andesite Alloy automation by completing the chapter about it."]
 			id: "44C3A969334FD34F"
 			rewards: [{
-				id: "6075F1085A5AB6EE"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "2D5B002886F07425"
+				item: "createdeco:gold_coin"
+				type: "item"
 			}]
 			tasks: [{
 				id: "0403FE7552177519"
@@ -435,6 +445,12 @@
 					type: "xp_levels"
 					xp_levels: 5
 				}
+				{
+					count: 8
+					id: "4AD2DC276F418473"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "71C80FD086FE1076"
@@ -452,6 +468,11 @@
 				"Congratulations on finishing your first processing chain!"
 			]
 			id: "5E53DCFDD8C4CC19"
+			rewards: [{
+				id: "4526A7FD24BFD4A0"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
 			size: 3.0d
 			tasks: [{
 				id: "3B0EF589F89914A5"
@@ -472,9 +493,9 @@
 			]
 			id: "2425DCF4AC4391AA"
 			rewards: [{
-				id: "60B3DA4EE55580DB"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "49DA6B2A5D6C1D6A"
+				item: "createdeco:gold_coin"
+				type: "item"
 			}]
 			size: 1.5d
 			subtitle: "Upgrade your Andesite Machine Hulls with an iron ingot to get Logistics Machine Hulls"
@@ -495,9 +516,9 @@
 			]
 			id: "459FD519AE814306"
 			rewards: [{
-				id: "70CF38A1AE5B464F"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "1D65E57B8FC52A89"
+				item: "createdeco:gold_coin"
+				type: "item"
 			}]
 			size: 1.5d
 			subtitle: "Upgrade your Andesite Machine Hulls with a copper ingot to get Copper Machine Hulls."

@@ -155,7 +155,7 @@
 				{
 					id: "1313993F7A604E55"
 					type: "xp_levels"
-					xp_levels: 10
+					xp_levels: 4
 				}
 				{
 					auto: "invisible"
@@ -167,6 +167,12 @@
 					title: "Andesite Age"
 					type: "gamestage"
 				}
+				{
+					count: 4
+					id: "2E6F00357A00C86F"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
 			]
 			size: 2.0d
 			subtitle: "Mix Zinc Nuggets and Andesite to make Andesite Alloy"
@@ -177,6 +183,47 @@
 			}]
 			x: 6.214285714285715d
 			y: -2.4642857142857153d
+		}
+		{
+			dependencies: ["789765F26A9A6F43"]
+			description: [
+				"You can turn your spare Diorite + more Andesite into Tuff."
+				""
+				"Later on, when you get Crushing Wheels, you can crush Tuff to get various random nuggets."
+				""
+				"This will get you a trickle of metals, but it certainly is not enough; you may want to:"
+				""
+				"- Build a dedicated Tuff making factory, by making Diorite from scratch (requires Charging Tesla)"
+				"- Setup Ore Excavation to never think about mining anything again. (requires Ore Excavators which are very late into the game)"
+				"- Make a dedicated iron farm (washing Gravel)"
+			]
+			id: "7DF2B3370E1C8A24"
+			optional: true
+			tasks: [
+				{
+					id: "03FB2EEC3AD80FE3"
+					item: "create:zinc_nugget"
+					type: "item"
+				}
+				{
+					id: "55B0E4BFE408BD74"
+					item: "create:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "23A2F6B84C38F416"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "6B6074D4F5814EDF"
+					item: "minecraft:gold_nugget"
+					type: "item"
+				}
+			]
+			title: "Passive Resources"
+			x: 4.5d
+			y: -1.0d
 		}
 	]
 	title: "Andesite Automation"

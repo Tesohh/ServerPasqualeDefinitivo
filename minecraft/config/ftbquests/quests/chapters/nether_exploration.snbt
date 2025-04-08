@@ -1,0 +1,157 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nether_exploration"
+	group: "514AC568FEA877D7"
+	icon: "kubejs:soul_inscriber"
+	id: "61B9D103C0A5C877"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "46013B7DF704E8AE"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "43DEDE8C317EC4EE"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46013B7DF704E8AE"]
+			icon: "minecraft:nether_bricks"
+			id: "620C8D4482312E7D"
+			rewards: [{
+				id: "7BC2D5911964749B"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08F24D48929D86E7"
+				structure: "minecraft:fortress"
+				type: "structure"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["620C8D4482312E7D"]
+			description: ["Blaze Core are a rare drop from Blazes"]
+			id: "4F3DE975F9D3ECCF"
+			rewards: [{
+				id: "6869C89F48547E17"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "28E655FEFFDC3D5A"
+				item: "kubejs:blaze_core"
+				type: "item"
+			}]
+			title: "Research: Blaze Core"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["620C8D4482312E7D"]
+			id: "39BEE46F221626A8"
+			rewards: [{
+				id: "2E43EFB73C4F7644"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "649A229309772B39"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			title: "Research: Wither Skeleton Skull"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["46013B7DF704E8AE"]
+			icon: "minecraft:piglin_head"
+			id: "3906BE794631E537"
+			rewards: [{
+				id: "06A7E43A680BB204"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BAF81DC555F7653"
+				structure: "minecraft:bastion_remnant"
+				type: "structure"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3906BE794631E537"]
+			description: ["It's a guaranteed drop from a Piglin Brute."]
+			id: "0CA3842FAA745C6F"
+			rewards: [{
+				id: "0399F83C2741D93C"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F86250CD26301DE"
+				item: "kubejs:mysterious_piglin_treasure"
+				type: "item"
+			}]
+			title: "Research: Mysterious Piglin Treasure"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"4F3DE975F9D3ECCF"
+				"0CA3842FAA745C6F"
+				"39BEE46F221626A8"
+			]
+			description: [
+				"After researching many nether inhabitants, you now have engineered yourself a Soul Inscriber!"
+				""
+				"You can use it to:"
+				""
+				"- Craft another Soul Inscriber"
+				"- Make Enchanted Books for the new Enchanting overhaul"
+				"- Turn Inert Soul Beads into Soul Beads"
+			]
+			icon: "kubejs:soul_inscriber"
+			id: "3AE60789289E47CD"
+			rewards: [
+				{
+					id: "4BC10072BAC8FACB"
+					item: "kubejs:soul_inscriber"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5DFCDDBF0F2651A9"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
+				{
+					id: "0DA675CF65384A86"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "06708ED42872B1EF"
+				type: "checkmark"
+			}]
+			title: "Soul Inscriber"
+			x: 0.0d
+			y: -5.5d
+		}
+	]
+	title: "The Inscriber"
+}
