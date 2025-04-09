@@ -11,4 +11,5 @@ ServerEvents.recipes(event => {
 	hull_crafting(event, hull, "create:spout", ["minecraft:dried_kelp"], "create:crafting/kinetics/spout")
 	hull_crafting(event, hull, "create_enchantment_industry:disenchanter", ["#create:sandpaper"], "create_enchantment_industry:crafting/disenchanter")
 	hull_crafting(event, hull, "create_enchantment_industry:printer", ["minecraft:dried_kelp", "minecraft:paper"], "create_enchantment_industry:crafting/printer")
+	hull_crafting(event, hull, "create:steam_engine", ["create:shaft", "create:golden_sheet"], "create:crafting/kinetics/steam_engine")
 })

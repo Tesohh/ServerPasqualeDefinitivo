@@ -1,0 +1,602 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "soul_factory"
+	group: "514AC568FEA877D7"
+	icon: "kubejs:soul_enclosure"
+	id: "01BB8AA3A6B3314C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "312C451756A68093"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "723BDFF0DB89D74B"
+				type: "dimension"
+			}]
+			x: 1.5d
+			y: -0.9107142857142776d
+		}
+		{
+			dependencies: [
+				"312C451756A68093"
+				"3B31F9D59AB30894"
+				"65DD7CCF9150963B"
+				"6FB8D52DB084B26D"
+			]
+			description: [
+				"As you probably have guessed, this production chain also starts with cobblestone."
+				""
+				"But, there is no way to make cobblestone in the &4nether&r, since &9water&r would instantly evaporate…"
+				""
+				"This calls for a &etrain&r setup, as &etrains&r are the only interdimensional logistics method available."
+				""
+				"Make a train station in the overworld to produce cobblestone and put it into a train with the portable storage interface."
+				""
+				"Note: You technically can make these recipes in the overworld, but you need so much lava that it just isn’t practical."
+				"You would need a very large dripstone setup, a pit of lava so large that it is considered bottomless or a train that brings lava from the nether."
+				"You’re better off just moving cobblestone to the nether and making everything there."
+			]
+			icon: "minecraft:cobblestone"
+			id: "2931D29F8D32D292"
+			rewards: [{
+				id: "29EC895A715148A3"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47D39285B858D524"
+				type: "checkmark"
+			}]
+			title: "Interdimensional Railway Company"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			description: ["View the ponder to learn more."]
+			id: "65DD7CCF9150963B"
+			optional: true
+			subtitle: "in order to make your stations always productive, place a Brass Power Loader on your train, or one on each train station."
+			tasks: [{
+				id: "3267F0A97330E51E"
+				item: "create_power_loader:brass_chunk_loader"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"You're gonna need a few of these for train stations. "
+				""
+				"You can make them by upgrading a Brass Machine Hull with Obsidian and Gold."
+			]
+			id: "3B31F9D59AB30894"
+			rewards: [{
+				id: "68148FC631BD7C73"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "440E691CC9E907DE"
+				item: "kubejs:train_machine_hull"
+				type: "item"
+			}]
+			title: "Your first train machines"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			id: "319B03BA66B50C29"
+			rewards: [{
+				id: "44A6886AF47B17D4"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Use a Hose Pulley to pull lava from a lava lake large enough to be considered bottomless"
+			tasks: [
+				{
+					id: "6130ECF8026F8E75"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "6ABBEAD555F7F0AD"
+					item: "create:hose_pulley"
+					type: "item"
+				}
+			]
+			title: "Tapping the Mantle"
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"319B03BA66B50C29"
+				"4233607C628720E3"
+				"5E6E4E6692157ED0"
+				"2931D29F8D32D292"
+			]
+			description: [
+				"Netherrack is pretty worthless, but it can be a very good source of redstone."
+				""
+				"You can automate it by mixing lava, cobblestone and cinder flour on a Heated Basin."
+				""
+				"Cinder flour is obtained from milling or crushing netherrack, so this is a cyclic recipe."
+			]
+			id: "45CDB8E5B64EC1C3"
+			tasks: [
+				{
+					id: "5A722AFD93AAA2BE"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+				{
+					id: "19B762972C2186CE"
+					item: "create:cinder_flour"
+					type: "item"
+				}
+			]
+			title: "Infinite Netherrack"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			description: [
+				"Blaze Burners can unlock new heated compacting or heated mixing recipes, but require fuel to function."
+				""
+				"By default, they only take solid fuels (coal, wood etc.), but you can use a Straw to make them take liquid fuels such as Lava too."
+				""
+				"Since we’re in the nether, and we already have an infinite source of lava…"
+			]
+			id: "4233607C628720E3"
+			rewards: [{
+				id: "127B7127924E100F"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "22EF0515E2C6609D"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"45CDB8E5B64EC1C3"
+				"151A9A387F6F45CD"
+			]
+			description: [
+				"You can use brass tunnels to split your cinder flour output belt."
+				""
+				"You are gonna need cinder flour for 3 things:"
+				""
+				"1. Making other netherrack"
+				"2. Turning it into redstone"
+				"3. Compacting it into Nether Bricks."
+				""
+				"It is recommended, if you use crushing, to split 1-2-1, in the order listed above."
+			]
+			id: "2395BA3C62DB6820"
+			rewards: [{
+				id: "4E98229A09CE0B52"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "231A661826D1F869"
+				item: { Count: 3, id: "create:brass_tunnel" }
+				type: "item"
+			}]
+			title: "Splitting Off"
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2395BA3C62DB6820"]
+			id: "7AEC0686FF122783"
+			rewards: [{
+				id: "657E95BE348AA3D6"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Move some cinder flour back to the mixer to make more netherrack."
+			tasks: [{
+				id: "784FF8C224E01413"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			title: "Making more netherrack"
+			x: -2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3745CF393E443010"]
+			description: ["Crushing Wheels will double your Cinder Flour output (4 per netherrack instead of 2 when milling)."]
+			id: "5E6E4E6692157ED0"
+			optional: true
+			tasks: [{
+				count: 2L
+				id: "733939210E60DFFF"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["151A9A387F6F45CD"]
+			description: ["Mechanical Crafters unlock various advanced recipes, as well as allowing for automation of all shaped crafting recipes."]
+			id: "3745CF393E443010"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "5FBBFD0916CB9A44"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "134AE230E0CB646B"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			description: ["Prepare some more Brass Machine Hulls, as you're gonna need some for Brass Tunnels, Tesla Coils and Mechanical Crafters."]
+			id: "151A9A387F6F45CD"
+			rewards: [{
+				count: 2
+				id: "437ED1BD462FEFC3"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "5A85337207424745"
+				item: "kubejs:brass_machine_hull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"2395BA3C62DB6820"
+				"151A9A387F6F45CD"
+			]
+			description: ["Charge Cinder Flour to make redstone."]
+			id: "4DA8649AE5C2426C"
+			rewards: [{
+				id: "3DBC023F7ECC0122"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2981A505CDC5EF7F"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			title: "Zap Wizard"
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2395BA3C62DB6820"]
+			id: "5699DD9115882B2E"
+			rewards: [{
+				id: "441C276C4CDDEC7D"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Compact cinder flour into nether bricks."
+			tasks: [{
+				id: "04287CAE3EEC2C36"
+				item: "minecraft:nether_brick"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4DA8649AE5C2426C"]
+			description: [
+				"In order to make electron tubes, we need to liquify the redstone powder first."
+				""
+				"You can do this by Mixing redstone powder on a heated basin."
+			]
+			id: "64F02A19D5A484F5"
+			rewards: [{
+				id: "06FA999D7BE0E927"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75742B821E916B16"
+				item: "kubejs:liquid_redstone_bucket"
+				type: "item"
+			}]
+			title: "Liquefying Redstone"
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"64F02A19D5A484F5"
+				"6A43AEFCB7C23516"
+			]
+			description: ["(you could also spout it on Iron, but it's harder to make in the nether)"]
+			icon: "create:electron_tube"
+			id: "55169C2B491AFC58"
+			rewards: [{
+				count: 4
+				id: "09E0DF212D5673C0"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Spout Liquid Redstone on a piece of Quartz to make an Electron Tube!"
+			tasks: [
+				{
+					id: "06A6FAD09B16D6DC"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "7D5788D0B7510A28"
+					item: "create:spout"
+					type: "item"
+				}
+			]
+			title: "Spouting"
+			x: -1.0d
+			y: -14.553571428571423d
+		}
+		{
+			dependencies: ["2931D29F8D32D292"]
+			id: "3D8F28E2AECD934F"
+			rewards: [{
+				id: "22324F3297F61674"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Crush Cobblestone twice to get Sand"
+			tasks: [{
+				id: "16CE615620928B72"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3D8F28E2AECD934F"
+				"151A9A387F6F45CD"
+			]
+			description: [
+				"You can use brass tunnels to split your cinder flour output belt."
+				""
+				"You are gonna need sand for 2 things:"
+				""
+				"1. Haunting it into Soul Sand "
+				"2. Smelting it to Glass"
+			]
+			id: "13022D4B8E582004"
+			rewards: [{
+				id: "5EEA5C9123C47EC3"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "160137DB9DF09445"
+				item: { Count: 3, id: "create:brass_tunnel" }
+				type: "item"
+			}]
+			title: "Splitting Off"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["13022D4B8E582004"]
+			description: [""]
+			id: "54454457376CE2DB"
+			rewards: [{
+				id: "336040CE86FEF511"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Haunt Sand twice to get Scared Soul Sand."
+			tasks: [{
+				id: "32C22B938368B7B7"
+				item: "chipped:scared_soul_sand"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["13022D4B8E582004"]
+			id: "3F68241D48FC3B24"
+			rewards: [{
+				id: "4F992DD90998FB54"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Smelt Sand into Glass."
+			tasks: [{
+				id: "0A58672B2B5C9FF9"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3F68241D48FC3B24"]
+			description: ["Sand is just SiO2, and Glass is just Sand..."]
+			id: "6A43AEFCB7C23516"
+			rewards: [{
+				id: "3A879709C32E0A2B"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Charge Glass to get Quartz."
+			tasks: [{
+				id: "6B39BD54655A62E9"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			title: "Glass = Quartz"
+			x: 4.0d
+			y: -11.5d
+		}
+		{
+			description: [
+				"Some recipes use Charging, which requires a Tesla Coil."
+				"You’re gonna need an alternator, to generate electricity from rotational energy and a Tesla Coil, to actually perform the charging."
+			]
+			id: "6FB8D52DB084B26D"
+			rewards: [{
+				id: "6B124D779C08AC65"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6C9F7EC47061C49C"
+					item: "createaddition:tesla_coil"
+					type: "item"
+				}
+				{
+					id: "19F2FDB357F12A23"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["54454457376CE2DB"]
+			description: [""]
+			id: "16380E00BC2EBD2B"
+			rewards: [{
+				id: "4A436A2D3B02CB07"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Charge a piece of Scared Soul Sand to get a Dead Soul Bead."
+			tasks: [{
+				id: "21E811EC6A420B23"
+				item: "kubejs:dead_soul_bead"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["16380E00BC2EBD2B"]
+			description: [""]
+			id: "438C69F09807B9DB"
+			rewards: [{
+				id: "446B62D0CAECE358"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Use a Soul Inscriber on the Dead Soul Bead to get a Soul Bead."
+			tasks: [{
+				id: "638371DD1382AACF"
+				item: "quark:soul_bead"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"438C69F09807B9DB"
+				"5699DD9115882B2E"
+			]
+			description: ["These, not only are used in brass machinery, but can also be used as a short lived fuel for Superheating blaze burners."]
+			id: "0482F5A0262482D0"
+			rewards: [{
+				count: 4
+				id: "42DA0EF74B4D591D"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Deploy a Soul Bead on a nether brick to make a Soul Enclosure."
+			tasks: [{
+				id: "2E8096831C5BBF6D"
+				item: "kubejs:soul_enclosure"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"0482F5A0262482D0"
+				"55169C2B491AFC58"
+			]
+			description: [
+				"You finally have automated every essential material for making cheaper brass machine hulls."
+				""
+				"If you still haven't automated Brass, check out Chapter One for a quest explaining how to do it."
+				"Now that you have Mechanical Crafters, you can make Crushing Wheels, which means you unlock a Tuff crushing recipe..."
+			]
+			id: "46E177A0C0E97438"
+			rewards: [
+				{
+					count: 16
+					id: "7BC31942F90ED1F9"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
+				{
+					id: "7714DEBBA3F9DE22"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "32AA50BE18B622EE"
+				item: "kubejs:brass_machine_hull"
+				type: "item"
+			}]
+			x: 2.5178571428571317d
+			y: -16.34821428571428d
+		}
+		{
+			dependencies: ["46E177A0C0E97438"]
+			description: ["You may also automate Train Machine Hulls by upgrading them with Obsidian and Gold."]
+			id: "225AE2744F449F39"
+			rewards: [{
+				count: 4
+				id: "68FDAACC5EA4D50A"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B0A0E73765B8023"
+				item: "kubejs:train_machine_hull"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -18.5d
+		}
+	]
+	title: "Soul Factory"
+}

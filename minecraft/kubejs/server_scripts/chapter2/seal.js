@@ -32,4 +32,23 @@ ServerEvents.recipes(event => {
 		G: "gold_ingot",
 		S: "nether_remastered:seal_of_the_underworld_item",
 	})
+
+	inter = "emerald"
+	event.recipes.create.sequenced_assembly([Item.of("nether_remastered:seal_crystal")], "emerald",
+		[
+			event.recipes.create.deploying(inter, [inter, 'obsidian']),
+			event.recipes.create.deploying(inter, [inter, 'obsidian']),
+			event.recipes.create.deploying(inter, [inter, 'obsidian']),
+			event.recipes.create.deploying(inter, [inter, Item.of('kubejs:engineers_hammer')]).keepHeldItem()
+		],
+	).transitionalItem(inter).loops(1)
+
+	event.shaped("2x nether_remastered:seal_of_the_underworld_item", [
+		"GGG",
+		"GSG",
+		"GGG"
+	], {
+		G: "gold_ingot",
+		S: "nether_remastered:seal_of_the_underworld_item",
+	})
 })
