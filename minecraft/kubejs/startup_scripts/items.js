@@ -13,5 +13,7 @@ StartupEvents.registry('item', event => {
 
 	event.create("incomplete_microcontroller").texture("jeg:item/circuit_board").displayName("Incomplete Microcontroller")
 	event.create("microcontroller").texture("jeg:item/circuit_board").glow(true).displayName("Microcontroller")
+
+	event.create("unenchanted_book").texture("minecraft:item/enchanted_book").displayName("Unenchanted Book")
 })
 
