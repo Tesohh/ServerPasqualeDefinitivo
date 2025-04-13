@@ -9,7 +9,10 @@
  */
 function enchant_crafting(event, enchant, level, ingredient, keepHeldItem) {
 	let recipe = event.recipes.create.deploying(
-		Item.of('minecraft:enchanted_book').withNBT({ StoredEnchantments: [{ id: enchant, lvl: level || 1 }] }),
+		[
+			Item.of('minecraft:enchanted_book').withNBT({ StoredEnchantments: [{ id: enchant, lvl: level || 1 }] }),
+			Item.of("endrem:cryptic_eye").withChance(0.01)
+		],
 		["kubejs:unenchanted_book", ingredient]
 	)
 

@@ -2,5 +2,6 @@
 	chapter_groups: [
 		{ id: "35CC5E02A31A690D", title: "Chapter 1" }
 		{ id: "514AC568FEA877D7", title: "Chapter 2" }
+		{ id: "5C32737A098B7DF4", title: "Chapter 3" }
 	]
 }

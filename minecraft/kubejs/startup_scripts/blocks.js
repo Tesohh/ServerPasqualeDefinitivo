@@ -12,4 +12,5 @@ StartupEvents.registry('block', event => {
 	hull(event, "copper_machine_hull", "Copper Machine Hull", "createframed:block/copper_window")
 	hull(event, "brass_machine_hull", "Brass Machine Hull", "create_sa:block/brass_cube")
 	hull(event, "train_machine_hull", "Train Machine Hull", "minecraft:block/reinforced_deepslate")
+	hull(event, "space_machine_hull", "Space Machine Hull", "ad_astra:block/steel_factory_block")
 })

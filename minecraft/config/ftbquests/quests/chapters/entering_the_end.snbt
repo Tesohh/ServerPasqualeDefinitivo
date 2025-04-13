@@ -1,0 +1,507 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "entering_the_end"
+	group: "5C32737A098B7DF4"
+	icon: "minecraft:ender_eye"
+	id: "71737F0F0658A787"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"End Portals cannot be opened with regular Ender Eyes."
+				""
+				"There are 16 types of special eyes that you can get."
+				""
+				"You must look for 12 special eyes and use those to open the portal..."
+			]
+			icon: "minecraft:ender_eye"
+			id: "35F3FAECFDCF7915"
+			rewards: [{
+				id: "4C54C899AE5A8A55"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "127DE823D148131C"
+				type: "checkmark"
+			}]
+			title: "Entering the End"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["Legends say this eye once belonged to one of the great Sandworms"]
+			id: "56DD3CD9ACBB116F"
+			optional: true
+			rewards: [{
+				id: "2F571F4115A4E4B1"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Found in Desert Pyramids"
+			tasks: [{
+				id: "059CAED595F42310"
+				item: {
+					Count: 1
+					id: "endrem:old_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["It was lost by a demon in the battle between the Aether and the Nether"]
+			id: "25CD1A5591564B90"
+			optional: true
+			rewards: [{
+				id: "207376C63A34765C"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Found in Nether Fortresses"
+			tasks: [{
+				id: "65AD29E350F84E37"
+				item: {
+					Count: 1
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["One of the last artifacts left behind by the Iceologers before they all suddenly vanished from the world"]
+			id: "3899602DB8655C0F"
+			optional: true
+			rewards: [{
+				id: "3801C3FD34C836B6"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Found in Igloos"
+			tasks: [{
+				id: "53AF33D842B470C3"
+				item: {
+					Count: 1
+					id: "endrem:cold_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["This eye is believed to have given our ancestors the knowledge of Redstone"]
+			id: "690408C6E64E5119"
+			optional: true
+			rewards: [{
+				id: "1600BD5DF8290E8C"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Found in Jungle Pyramids"
+			tasks: [{
+				id: "2F9B8271D3F9287A"
+				item: {
+					Count: 1
+					id: "endrem:rogue_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["Pirates say it gave sight to the legendary Black Pearl"]
+			id: "352AA0B2C0D7525D"
+			optional: true
+			rewards: [{
+				id: "32C4BC3B40A5395A"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Found in Buried Chests"
+			tasks: [{
+				id: "4324D69D4F8C977E"
+				item: {
+					Count: 1
+					id: "endrem:black_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["Without this eye, the Evoker has no power"]
+			id: "4D544B7DD9A2C456"
+			optional: true
+			rewards: [{
+				id: "4C97E44C220B0771"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Dropped by Evokers"
+			tasks: [{
+				id: "654C197F00E5BD02"
+				item: {
+					Count: 1
+					id: "endrem:magical_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["It is told that it was forged by the first blacksmiths of time"]
+			id: "6A3E72E0D7D3C61A"
+			optional: true
+			rewards: [{
+				id: "432069E5E5DC164C"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Found in Mineshafts"
+			tasks: [{
+				id: "4A980250D975484A"
+				item: {
+					Count: 1
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["The eye of a greedy king faded in solitude. Legend says it will bring infinite fortune to its owner"]
+			id: "72E7B1C494A4AD67"
+			optional: true
+			rewards: [{
+				id: "5D30592C16D33B84"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: " Found in Pillager Outposts"
+			tasks: [{
+				id: "0FC8724629A0ED2E"
+				item: {
+					Count: 1
+					id: "endrem:corrupted_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["Has witnessed destruction. Maybe it also witnessed your stuff disappear"]
+			id: "4C86A8005C29124B"
+			optional: true
+			rewards: [{
+				id: "66AB8BAB30B64CDB"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Dropped by The Wither"
+			tasks: [{
+				id: "3498F116F64E6EC1"
+				item: {
+					Count: 1
+					id: "endrem:wither_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["It has seen many warriors drown into the depths of the sea"]
+			id: "122C2A9B59BA4CC6"
+			optional: true
+			rewards: [{
+				id: "650E6BD139FA4904"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Get it by Killing Elder Guardian"
+			tasks: [{
+				id: "654FB673E68BE706"
+				item: {
+					Count: 1
+					id: "endrem:guardian_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["This pupil is believed to have seen the ancient brewing recipes that were lost in time."]
+			id: "4B7C82021F933E99"
+			optional: true
+			rewards: [{
+				id: "287266832CAE06AD"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Craft it using the witch pupil"
+			tasks: [{
+				id: "19BB2AF3C68208DE"
+				item: {
+					Count: 1
+					id: "endrem:witch_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["A powerful yet destructive artifact; the Piglins swore to protect it at the cost of their lives"]
+			id: "7E426E1E2148A909"
+			optional: true
+			rewards: [{
+				id: "747DADD8F14768CE"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Found in Bastions treasure chest"
+			tasks: [{
+				id: "25728F5C0C9919E7"
+				item: {
+					Count: 1
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["Those who followed this eye were never seen again; rumors say they found the great city of Atlantis, or lost their way trying"]
+			id: "70B505F4C6E11C73"
+			optional: true
+			rewards: [{
+				id: "71216E2903D17796"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Craft it using aquatic items"
+			tasks: [{
+				id: "4645ECE369D31069"
+				item: {
+					Count: 1
+					id: "endrem:exotic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["A holy talisman said to protect its owner from bad luck"]
+			id: "6B0095309BE64BD8"
+			optional: true
+			rewards: [{
+				id: "19172345A46FDD0D"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Buy it from a master cleric"
+			tasks: [{
+				id: "15301804394D9797"
+				item: {
+					Count: 1
+					id: "endrem:evil_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: [
+				"Remembrance of the past lives of those who live in death."
+				""
+				"The Undead Soul is obtained by killing a skeleton horse."
+			]
+			id: "42E449D78977482A"
+			optional: true
+			rewards: [{
+				id: "53EC1AECA6C1C0D2"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: " Craft it using an Undead Soul"
+			tasks: [{
+				id: "296739AE47590144"
+				item: {
+					Count: 1
+					id: "endrem:undead_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F3FAECFDCF7915"]
+			description: ["No information about this eye"]
+			id: "159D0727A6C3D007"
+			optional: true
+			rewards: [{
+				id: "3D60C0414D1C1CAB"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: " Have a small chance to get it when making an enchanted book"
+			tasks: [{
+				id: "0885833799C8D5AB"
+				item: {
+					Count: 1
+					id: "endrem:cryptic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"72E7B1C494A4AD67"
+				"4C86A8005C29124B"
+				"122C2A9B59BA4CC6"
+				"6B0095309BE64BD8"
+				"42E449D78977482A"
+				"56DD3CD9ACBB116F"
+				"352AA0B2C0D7525D"
+				"70B505F4C6E11C73"
+				"4B7C82021F933E99"
+				"690408C6E64E5119"
+				"6A3E72E0D7D3C61A"
+				"4D544B7DD9A2C456"
+				"7E426E1E2148A909"
+				"25CD1A5591564B90"
+				"3899602DB8655C0F"
+				"159D0727A6C3D007"
+			]
+			dependency_requirement: "one_started"
+			id: "29367DA30F279CC7"
+			rewards: [
+				{
+					count: 32
+					id: "552CFFCA599BDE89"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
+				{
+					id: "0E34FBCBB12F503F"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			tasks: [{
+				count: 12L
+				id: "0C4DA1F72B9F0956"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:ender_eyes)"
+					}
+				}
+				title: "Any #kubejs:ender_eyes"
+				type: "item"
+			}]
+			title: "12 Eyes"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["29367DA30F279CC7"]
+			icon: "minecraft:end_portal_frame"
+			id: "5159B11DCDB9DDD4"
+			size: 2.0d
+			subtitle: "Place the 12 eyes and enter the end!"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "11E789D340DBB7AF"
+				type: "dimension"
+			}]
+			title: "Enter the End"
+			x: 1.5d
+			y: -5.5d
+		}
+	]
+	title: "Entering the End"
+}

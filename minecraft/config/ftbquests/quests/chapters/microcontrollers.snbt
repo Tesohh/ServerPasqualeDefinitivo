@@ -1,0 +1,413 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "microcontrollers"
+	group: "5C32737A098B7DF4"
+	icon: "kubejs:microcontroller"
+	id: "2DDF8ECA2FC5838D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7E51D99DFCDFBD79"]
+			description: [
+				"Oil can be refined into other useful products by heated mixing it."
+				""
+				"You can find oil in large wells for some early oil or extract it with a Fluid Extractor."
+			]
+			id: "0F8F399DA1FE79AF"
+			rewards: [{
+				id: "549D30083142D05E"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "3151B59495620BCF"
+				item: "ad_astra:oil_bucket"
+				type: "item"
+			}]
+			title: "Oil Processing"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Locate an Oil Well using a Vein Finder and extract it."
+				""
+				"You may want to move your oil to your main base or produce everything near the vein and move products to your base."
+				""
+				"You're gonna need to use trains and power loaders, as Oil Wells might be very far away."
+			]
+			id: "7E51D99DFCDFBD79"
+			optional: true
+			rewards: [{
+				id: "6F64C5D615C6A21A"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Find an Oil Well and start extracting Oil"
+			tasks: [{
+				id: "231D05354662CCC0"
+				item: "createoreexcavation:extractor"
+				type: "item"
+			}]
+			title: "Pumpjack"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0F8F399DA1FE79AF"]
+			id: "2A9C9FA3B9946F03"
+			rewards: [{
+				id: "644058F43D6D6E16"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B6756CA6348278B"
+				item: "kubejs:light_oil_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F8F399DA1FE79AF"]
+			id: "5D5B11D3DF7C9E98"
+			rewards: [{
+				id: "3B001FC38A0FBCC0"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E2C3E0994042E7B"
+				item: "kubejs:heavy_oil_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D5B11D3DF7C9E98"]
+			description: [
+				"Solid fuel is a very useful fuel, with the same burn time as a blaze rod."
+				""
+				"You can use it to keep your blaze burners heated for example."
+			]
+			id: "02A78FAAE6E1CEF1"
+			rewards: [{
+				id: "08EC10F04687ECB9"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Compact Heavy Oil to get Solid Fuel."
+			tasks: [{
+				id: "687BB9CAA66A3D17"
+				item: "kubejs:solid_fuel"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5D5B11D3DF7C9E98"]
+			id: "74225797472BA8EE"
+			rewards: [{
+				id: "14CCBCDA00E126F1"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Heavy Oil can be cracked into Light Oil using water."
+			tasks: [{
+				id: "4CE57462C4F6BCAD"
+				item: "kubejs:light_oil_bucket"
+				type: "item"
+			}]
+			title: "Cracking"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2A9C9FA3B9946F03"]
+			id: "61ED365CE099A522"
+			rewards: [{
+				id: "3ECE1449592A5291"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Compact Light Oil to get Plastic."
+			tasks: [{
+				id: "6D8F4647D21302AB"
+				item: "kubejs:plastic_bar"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0BFE65B2D1DED1CC"]
+			id: "5DEB5136A0C1D6CA"
+			rewards: [{
+				id: "4EDC992CE5993BF3"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Heated mixing sand has a small chance to give Raw Silicon Dust."
+			tasks: [{
+				id: "1FF5D7C70EAF7126"
+				item: "kubejs:raw_silicon_dust"
+				type: "item"
+			}]
+			title: "Silicon Processing"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			id: "0BFE65B2D1DED1CC"
+			rewards: [{
+				id: "6DED9E0D3F680466"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "You already know how to get this."
+			tasks: [{
+				id: "48F102F2A0F61000"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5DEB5136A0C1D6CA"]
+			id: "14B38EDAB60C75AD"
+			rewards: [{
+				id: "7E631FB27CC0EAEB"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Smelt Silicon Dust to get a Silicon Wafer."
+			tasks: [{
+				id: "7B8EC746A0DD6320"
+				item: "kubejs:silicon_wafer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C8F4B796925EBB4"
+				"14B38EDAB60C75AD"
+			]
+			id: "4AACC243EAB1932E"
+			rewards: [{
+				id: "43D635C7D0A3491D"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10FF48EB7349CFE6"
+				item: "kubejs:engraved_ram_wafer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4D3A31AB08D684E7"
+				"14B38EDAB60C75AD"
+			]
+			id: "44ABF878947CF1C5"
+			rewards: [{
+				id: "57AAD753FB7CC82A"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59C11319B2A25AD2"
+				item: "kubejs:engraved_cpu_wafer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			id: "4D3A31AB08D684E7"
+			rewards: [{
+				id: "39E82EB9ACC75755"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "You can make this using the Purified Titanite Shard."
+			tasks: [{
+				id: "09B42D695AFF7BFE"
+				item: "kubejs:laser_cpu_engraver"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			id: "1C8F4B796925EBB4"
+			rewards: [{
+				id: "27B7FECB0B4C6D9E"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "You can make this using the Purified Titanite Shard."
+			tasks: [{
+				id: "0B02A0976002C172"
+				item: "kubejs:laser_ram_engraver"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4AACC243EAB1932E"]
+			id: "1D34127D800D8551"
+			rewards: [{
+				id: "6F08C61888EF43FE"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Cut the engraved wafer to get a variable amount of RAM Chips."
+			tasks: [{
+				id: "16218C728AFF3050"
+				item: "kubejs:ram_chip"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44ABF878947CF1C5"]
+			id: "695964F9D92A65BF"
+			rewards: [{
+				id: "400FFFE9E283AD6B"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Cut the engraved wafer to get a variable amount of CPU Chips."
+			tasks: [{
+				id: "38EF8DD33B47D59B"
+				item: "kubejs:cpu_chip"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"61ED365CE099A522"
+				"16BF3FE5D1569B3A"
+				"1D34127D800D8551"
+				"695964F9D92A65BF"
+			]
+			description: [
+				"Finally, you have made microcontrollers!"
+				""
+				"These can be turned into..."
+			]
+			id: "0CE77AE9FA59051D"
+			rewards: [
+				{
+					count: 16
+					id: "2662E87450A20688"
+					item: "createdeco:gold_coin"
+					type: "item"
+				}
+				{
+					id: "47EE8313CAC45990"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "52C25A42339EA29A"
+				item: "kubejs:microcontroller"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			description: [""]
+			id: "42D2D3E3954C11CD"
+			rewards: [{
+				id: "55AB3CB48DE600CD"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Automate copper in any way you'd like."
+			tasks: [{
+				id: "02E148E9849DD796"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6857ED8EF0CA8454"]
+			id: "16BF3FE5D1569B3A"
+			rewards: [{
+				id: "5B0E0FE0584FBC23"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Roll copper sheets to get copper wires."
+			tasks: [{
+				id: "33BC40095DC48BC6"
+				item: "createaddition:copper_wire"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0CE77AE9FA59051D"]
+			description: [""]
+			id: "0957648E348D7E1B"
+			rewards: [{
+				count: 4
+				id: "2AC1C3BF576336A8"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Space Machine Hulls are the base for all space related machines."
+			tasks: [{
+				id: "7A26180467CD030D"
+				item: "kubejs:space_machine_hull"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["42D2D3E3954C11CD"]
+			id: "6857ED8EF0CA8454"
+			rewards: [{
+				id: "04CE2775D1FD06F2"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Press a copper ingot to get copper sheet."
+			tasks: [{
+				id: "638B8A66F4D7AF29"
+				item: "create:copper_sheet"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	title: "Microcontrollers"
+}

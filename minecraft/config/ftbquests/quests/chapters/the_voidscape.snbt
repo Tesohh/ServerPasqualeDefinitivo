@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_voidscape"
+	group: "5C32737A098B7DF4"
+	icon: "minecraft:bedrock"
+	id: "0D5DD6E398C8622D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Under the bedrock, lies a whole new dimension..."
+				""
+				"This dimension contains endgame items and gear, and you will need to dip your toes in it to make Microcontrollers later on."
+				""
+				"Stand on a bedrock block long enough to be consumed by it."
+				""
+				"NOTE: waystones are disabled here. To return to the overworld, throw yourself into the void."
+			]
+			icon: "minecraft:bedrock"
+			id: "49F1041759ED4B4D"
+			rewards: [{
+				count: 4
+				id: "3DB198A847A7ED59"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				dimension: "voidscape:void"
+				id: "7D981D6F0DDA66DD"
+				type: "dimension"
+			}]
+			title: "The Voidscape"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49F1041759ED4B4D"]
+			description: [""]
+			id: "4FF51A581F284A1C"
+			rewards: [{
+				id: "52A2FF94A0A0A2D3"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Dropped from non-native mobs in the Void"
+			tasks: [{
+				id: "66514706721094A7"
+				item: "voidscape:ethereal_essence"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["49F1041759ED4B4D"]
+			id: "3C60C804C333944D"
+			rewards: [{
+				id: "0F997DDFC3296C9E"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Use a Ethereal Essence on bedrock and then mine it"
+			tasks: [{
+				id: "7DB7D5716856A47B"
+				item: "voidscape:voidic_crystal"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3C60C804C333944D"]
+			id: "3A983DB21CE44ECA"
+			rewards: [{
+				id: "69BBF8735FC74593"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68E74885FA1F5C8C"
+				item: {
+					Count: 1
+					id: "voidscape:voidic_crystal_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3A983DB21CE44ECA"]
+			description: [""]
+			id: "2470269FC0DD1A1C"
+			rewards: [{
+				id: "1F49A6A173C7AC15"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Find 2 Titanite Ores in the overworld, and smelt them."
+			tasks: [{
+				count: 2L
+				id: "2BA22AE3BD095DA0"
+				item: "voidscape:titanite_chunk"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2470269FC0DD1A1C"]
+			icon: "voidscape:titanite_shard"
+			id: "6B1819E1CBC35D81"
+			rewards: [{
+				count: 4
+				id: "4A95AD6C2A936612"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Use a Titanite Chunk on a Null Servant and then kill it"
+			tasks: [
+				{
+					entity: "voidscape:null_servant"
+					id: "232A9E30224C5638"
+					type: "kill"
+					value: 2L
+				}
+				{
+					count: 2L
+					id: "375F4F2395FF23E1"
+					item: "voidscape:titanite_shard"
+					type: "item"
+				}
+			]
+			title: "Purified Titanite Shards"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6B1819E1CBC35D81"]
+			description: [
+				"You're done with the required progress in Voidscape."
+				""
+				"Why not stay a little longer?"
+				"The dimension is full of content and after some grinding, you can get the best possible gear in the game."
+			]
+			id: "0D5DCDF5F048B246"
+			tasks: [{
+				id: "078C5AC7EFAD34E9"
+				title: "Stay a little longer?"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -9.0d
+		}
+	]
+	title: "The Voidscape"
+}
