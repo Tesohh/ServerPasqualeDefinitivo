@@ -44,3 +44,4 @@ config/darkmodeeverywhereshaders.json
 # Downloadable dependencies
 **/node_modules
 instance.cfg
+.packignore

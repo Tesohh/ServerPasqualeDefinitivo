@@ -4,4 +4,6 @@ ItemEvents.tooltip(event => {
 	event.add("copper_machine_hull", "The inner guts of fluid related machines")
 	event.add("brass_machine_hull", "The inner guts of all advanced brass machines")
 	event.add("train_machine_hull", "The inner guts of all train related machines")
+
+	event.add("solid_fuel", "Better than coal!")
 })

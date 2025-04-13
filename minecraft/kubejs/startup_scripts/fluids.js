@@ -13,4 +13,19 @@ StartupEvents.registry('fluid', event => {
 		.thickTexture(0xfc0000)
 		.bucketColor(0xfc0000)
 		.displayName('Liquid Redstone')
+
+	event.create('heavy_oil')
+		.thinTexture(0x372124)
+		.bucketColor(0x372124)
+		.displayName('Heavy Oil')
+
+	event.create('light_oil')
+		.thinTexture(0x793c2b)
+		.bucketColor(0x793c2b)
+		.displayName('Light Oil')
+
+	event.create('naphtha')
+		.thinTexture(0x5c3866)
+		.bucketColor(0x5c3866)
+		.displayName('Naphtha')
 })
