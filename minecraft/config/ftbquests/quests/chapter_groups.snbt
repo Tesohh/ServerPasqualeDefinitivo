@@ -1,7 +1,9 @@
 {
 	chapter_groups: [
+		{ id: "26E9B70078D92F43", title: "Introduction" }
 		{ id: "35CC5E02A31A690D", title: "Chapter 1" }
 		{ id: "514AC568FEA877D7", title: "Chapter 2" }
 		{ id: "5C32737A098B7DF4", title: "Chapter 3" }
+		{ id: "33720FE70A9D5AC2", title: "Finale" }
 	]
 }

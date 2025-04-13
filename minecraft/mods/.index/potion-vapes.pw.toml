@@ -1,0 +1,16 @@
+filename = 'potionvapes-1.2.0-1.20.1-FORGE.jar'
+name = 'Potion Vapes'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '826a413380f2f55af299b083373fcd0d9606a1dd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5820876
+project-id = 923513

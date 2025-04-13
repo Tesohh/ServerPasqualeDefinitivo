@@ -16,7 +16,7 @@
 				""
 				"Stand on a bedrock block long enough to be consumed by it."
 				""
-				"NOTE: waystones are disabled here. To return to the overworld, throw yourself into the void."
+				"NOTE: interdimensional waystones are disabled here. To return to the overworld, throw yourself into the void."
 			]
 			icon: "minecraft:bedrock"
 			id: "49F1041759ED4B4D"

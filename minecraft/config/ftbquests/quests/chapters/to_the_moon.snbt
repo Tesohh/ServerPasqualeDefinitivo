@@ -1,0 +1,134 @@
+{
+	autofocus_id: "3AB90A17F0EFE591"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "to_the_moon"
+	group: "33720FE70A9D5AC2"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_1_rocket"
+		tag: { }
+	}
+	id: "328F199FC1623125"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"To finish it off and craft the Creative Vape, you're gonna need to fly to the moon."
+				""
+				"For that, you need space machine hulls."
+			]
+			id: "40374FE85E2DC449"
+			tasks: [{
+				id: "3676CD869A161120"
+				item: "kubejs:space_machine_hull"
+				type: "item"
+			}]
+			title: "To the Moon"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			description: [
+				"This is it. You have finally done it."
+				""
+				"Now enjoy infinite potion effects and nicotine addiction!"
+			]
+			id: "3AB90A17F0EFE591"
+			rewards: [
+				{
+					count: 1024
+					id: "0771867EFC5CBC8A"
+					item: "createdeco:gold_coinstack"
+					type: "item"
+				}
+				{
+					id: "51575683C1DEA6A5"
+					type: "xp_levels"
+					xp_levels: 99999
+				}
+				{
+					auto: "invisible"
+					command: "/tellraw @a \"Congratulations to team {team} on crafting a CREATIVE VAPE! They win!\""
+					elevate_perms: true
+					id: "3CE953AA41484218"
+					type: "command"
+				}
+			]
+			size: 4.0d
+			tasks: [{
+				id: "28B8DBE8AEDAEE08"
+				item: {
+					Count: 1
+					id: "potionvapes:creative_vape"
+					tag: {
+						VapeJuice: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40374FE85E2DC449"]
+			description: [""]
+			id: "15CC26A7003B79A0"
+			subtitle: "The nasa workbench can craft rockets."
+			tasks: [{
+				id: "1C1D1B79E9E59031"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["40374FE85E2DC449"]
+			id: "350EC7F362999B2A"
+			subtitle: "The fuel refinery is needed to make Fuel from Light Oil."
+			tasks: [{
+				id: "2147E68A43D1C1F3"
+				item: "ad_astra:fuel_refinery"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3A0D1F679114E4D7"]
+			id: "03E5B03257F13CFA"
+			subtitle: "Launch your rocket and fly to the moon!"
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "2E1415B53EA11332"
+				type: "dimension"
+			}]
+			title: "Visit the Moon"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"15CC26A7003B79A0"
+				"350EC7F362999B2A"
+			]
+			id: "3A0D1F679114E4D7"
+			subtitle: "The tier 1 rocket can be made in a Nasa Workbench and must be fed fuel before launching."
+			tasks: [{
+				id: "0276D3771ACEE4B2"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+	]
+	title: "The Space Race"
+}
