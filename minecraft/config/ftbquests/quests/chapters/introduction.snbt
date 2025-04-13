@@ -131,11 +131,11 @@
 				""
 				"Hyper Enchanting can also give you any enchant at +1 its max level."
 			]
+			icon: "minecraft:enchanting_table"
 			id: "58B5F89C570223BC"
 			tasks: [{
-				id: "261D89FF039B4365"
-				item: "minecraft:enchanting_table"
-				type: "item"
+				id: "26528A7F1E3347BC"
+				type: "checkmark"
 			}]
 			title: "Overhauled Wizardry..."
 			x: -1.5d
