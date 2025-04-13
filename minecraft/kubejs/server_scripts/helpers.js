@@ -8,7 +8,7 @@
  * @param {number} energy
  */
 function charging_recipe(event, output, input, energy) {
-	event.custom({
+	return event.custom({
 		type: "createaddition:charging",
 		input: { item: input },
 		result: { item: output },
