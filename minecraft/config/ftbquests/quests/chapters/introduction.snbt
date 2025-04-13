@@ -1,0 +1,204 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "introduction"
+	group: ""
+	icon: "minecraft:grass_block"
+	id: "1D1AE5122EED5724"
+	images: [
+		{
+			height: 1.0d
+			image: "jeg:textures/animated/gun/finger_gun.png"
+			rotation: -45.0d
+			width: 1.0d
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			height: 4.0d
+			image: "kubejs:item/serverpasqualedefinitivo"
+			rotation: 0.0d
+			width: 4.0d
+			x: -4.0d
+			y: -5.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6CA30EB7D7FB4A6D"]
+			description: [
+				"Thanks to Create, you can automate (almost) anything in the game."
+				""
+				"You can also make a central storage system, complete with autocrafting and more."
+				""
+				"The pack also adds tiered progression divided in 3 chapters, each with it's own machines."
+			]
+			icon: "create:cogwheel"
+			id: "733CA4A395FE067E"
+			tasks: [{
+				id: "350B76CE09095D9C"
+				type: "checkmark"
+			}]
+			title: "Automation Engineering..."
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6CA30EB7D7FB4A6D"]
+			description: [
+				"With various tweaks to dimensions and how you enter them, among with adding a completely new post-End dimension, and adding various bosses, you are always gonna have something new to find."
+				""
+				"Your efforts are also useful to everyone else, as you will need to research your loot to turn it into useful tools to craft new materials."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "54126F3FD4BFF98E"
+			tasks: [{
+				id: "3AE3D415641E882D"
+				type: "checkmark"
+			}]
+			title: "Exploration and Combat..."
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Welcome to Server Pasquale Definitivo."
+				""
+				"This is a modpack inspired by Create: Above and Beyond, made to be more multiplayer friendly."
+				""
+				"It's made so that people can do various activities, but they all rely on each other"
+			]
+			icon: "minecraft:grass_block"
+			id: "6CA30EB7D7FB4A6D"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "20F59B0DBC01DA4E"
+				type: "checkmark"
+			}]
+			title: "Welcome"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CA30EB7D7FB4A6D"]
+			description: ["Some resources come from specific locations or cannot be made in certain dimensions where you may need them, so transportation via Trains is required."]
+			icon: "create:track_station"
+			id: "22734064379D248E"
+			tasks: [{
+				id: "3E5438D730489A96"
+				type: "checkmark"
+			}]
+			title: "Transportation Engineering..."
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6CA30EB7D7FB4A6D"]
+			description: [
+				"Space Exploration is now possible with Ad Astra!"
+				""
+				"5 different planets, one of which is in another solar system, and each with it's own structures and things to find and do."
+			]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			id: "3D799469E9706F47"
+			tasks: [{
+				id: "4AD3852F0F992FD0"
+				type: "checkmark"
+			}]
+			title: "Aerospace Engineering..."
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6CA30EB7D7FB4A6D"]
+			description: [
+				"The Enchantment system has been completely reworked."
+				""
+				"Enchanting Tables have been disabled and you must craft books, just once, as you can clone or assign them to a Blaze Enchanter."
+				""
+				"Hyper Enchanting can also give you any enchant at +1 its max level."
+			]
+			id: "58B5F89C570223BC"
+			tasks: [{
+				id: "261D89FF039B4365"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Overhauled Wizardry..."
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"54126F3FD4BFF98E"
+				"733CA4A395FE067E"
+				"22734064379D248E"
+				"3D799469E9706F47"
+				"58B5F89C570223BC"
+				"4BC8752CC274F77B"
+			]
+			description: ["The Final Objective of the pack is to craft the Creative Vape, which doesn't consume any Vape Juice."]
+			icon: {
+				Count: 1
+				id: "potionvapes:creative_vape"
+				tag: {
+					VapeJuice: { }
+				}
+			}
+			id: "05843A23EECABC96"
+			size: 2.0d
+			tasks: [{
+				id: "5C42BCADA5E81BAD"
+				item: {
+					Count: 1
+					id: "potionvapes:creative_vape"
+					tag: {
+						VapeJuice: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "... leading up to the Creative Vape"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6CA30EB7D7FB4A6D"]
+			description: [
+				"Thanks to Just Enough Guns, you have a large set of weapons to craft and try."
+				""
+				"Also, sometimes, you will get raided and need to defend your base!"
+			]
+			icon: {
+				Count: 1
+				id: "jeg:waterpipe_shotgun"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+				}
+			}
+			id: "4BC8752CC274F77B"
+			tasks: [{
+				id: "68C265F7D834C8B5"
+				type: "checkmark"
+			}]
+			title: "Guns..."
+			x: -8.0d
+			y: 0.5d
+		}
+	]
+	title: "Introduction"
+}

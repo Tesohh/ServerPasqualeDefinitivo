@@ -14,6 +14,14 @@
 		}
 	}
 	id: "69892391CB08987F"
+	images: [{
+		height: 2.0d
+		image: "kubejs:item/serverpasqualedefinitivo_small"
+		rotation: 0.0d
+		width: 2.0d
+		x: 0.5d
+		y: 3.5d
+	}]
 	order_index: 3
 	quest_links: [ ]
 	quests: [

@@ -5,6 +5,14 @@
 	group: "35CC5E02A31A690D"
 	icon: "create:andesite_alloy"
 	id: "3F3E712A5CC85041"
+	images: [{
+		height: 2.0d
+		image: "kubejs:item/serverpasqualedefinitivo_small"
+		rotation: 0.0d
+		width: 2.0d
+		x: 2.0d
+		y: -4.5d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [

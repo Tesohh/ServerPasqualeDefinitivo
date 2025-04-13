@@ -9,6 +9,24 @@
 		tag: { }
 	}
 	id: "328F199FC1623125"
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:item/serverpasqualedefinitivo_small"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:item/serverpasqualedefinitivo_small"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -3.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

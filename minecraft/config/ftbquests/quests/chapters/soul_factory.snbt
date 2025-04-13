@@ -5,6 +5,14 @@
 	group: "514AC568FEA877D7"
 	icon: "kubejs:soul_enclosure"
 	id: "01BB8AA3A6B3314C"
+	images: [{
+		height: 2.0d
+		image: "kubejs:item/serverpasqualedefinitivo_small"
+		rotation: 0.0d
+		width: 2.0d
+		x: 2.0d
+		y: -10.0d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
