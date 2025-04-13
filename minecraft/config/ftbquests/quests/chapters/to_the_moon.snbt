@@ -1,5 +1,4 @@
 {
-	autofocus_id: "3AB90A17F0EFE591"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "to_the_moon"
@@ -20,6 +19,11 @@
 				"For that, you need space machine hulls."
 			]
 			id: "40374FE85E2DC449"
+			rewards: [{
+				id: "788FB10DB2BD4300"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3676CD869A161120"
 				item: "kubejs:space_machine_hull"
@@ -30,6 +34,7 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["730278A3D4EDDB99"]
 			description: [
 				"This is it. You have finally done it."
 				""
@@ -75,6 +80,11 @@
 			dependencies: ["40374FE85E2DC449"]
 			description: [""]
 			id: "15CC26A7003B79A0"
+			rewards: [{
+				id: "7FF7E554D7931A37"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
 			subtitle: "The nasa workbench can craft rockets."
 			tasks: [{
 				id: "1C1D1B79E9E59031"
@@ -87,6 +97,11 @@
 		{
 			dependencies: ["40374FE85E2DC449"]
 			id: "350EC7F362999B2A"
+			rewards: [{
+				id: "707F2B52E6EE531D"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
 			subtitle: "The fuel refinery is needed to make Fuel from Light Oil."
 			tasks: [{
 				id: "2147E68A43D1C1F3"
@@ -99,6 +114,12 @@
 		{
 			dependencies: ["3A0D1F679114E4D7"]
 			id: "03E5B03257F13CFA"
+			rewards: [{
+				count: 4
+				id: "6DAFB5E7F05C0AEC"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
 			subtitle: "Launch your rocket and fly to the moon!"
 			tasks: [{
 				dimension: "ad_astra:moon"
@@ -116,6 +137,12 @@
 				"350EC7F362999B2A"
 			]
 			id: "3A0D1F679114E4D7"
+			rewards: [{
+				count: 4
+				id: "5FB82AF895903E3E"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
 			subtitle: "The tier 1 rocket can be made in a Nasa Workbench and must be fed fuel before launching."
 			tasks: [{
 				id: "0276D3771ACEE4B2"
@@ -128,6 +155,25 @@
 			}]
 			x: 0.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["03E5B03257F13CFA"]
+			description: ["I'll leave you to figure things out, just know you're gonna need 4 Desh Blocks."]
+			id: "730278A3D4EDDB99"
+			rewards: [{
+				count: 4
+				id: "50FAA2EDAEAD00A3"
+				item: "createdeco:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2BB9486F51F2EDF5"
+				item: { Count: 4, id: "ad_astra:desh_block" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
 		}
 	]
 	title: "The Space Race"
